@@ -1,7 +1,7 @@
 ﻿int a = Convert.ToInt32(Console.ReadLine());
 int b = Convert.ToInt32(Console.ReadLine());
-int b2 = b * b;
-if(a == b2)
+
+if(a == b * b)
 {
     Console.WriteLine($"{a} является квадратом {b}");
 }
