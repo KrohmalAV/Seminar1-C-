@@ -7,6 +7,7 @@
 85 -> 8
 */
 
+Console.Clear();
 int n = new Random().Next(10, 100);
 Console.WriteLine(n);
 int max = n % 10;
