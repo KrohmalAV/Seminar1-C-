@@ -12,6 +12,5 @@ Console.Write("Введите первое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
-double a2 = Math.Pow(a, 2);
-if(a2  == b) Console.WriteLine($"{b} является квадратом {a}");
-else Console.WriteLine($"{b} не является квадратом {a}");
+if((a*a == b) || (a == b*b)) Console.WriteLine($"Да");
+else Console.WriteLine($"Нет");
