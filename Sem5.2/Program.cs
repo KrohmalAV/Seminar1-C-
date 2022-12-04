@@ -22,35 +22,9 @@ void RepArray(int[]array)
         array[i] = -array[i];
 }
 
-int[] array = new int[5];
+int[] array = new int[6];
 FillArray(array);
 PrintArray(array);
-int[] arr = array;
-RepArray(arr);
+RepArray(array);
 Console.WriteLine();
-PrintArray(arr);
-
-
-
-
-
-
-// int[] arr = new int[12];
-// for (int i = 0; i < 12; i++)
-//   arr[i] = new Random().Next(-9, 10);
-// PrintArray(arr);
-// Console.WriteLine();
-// Convert(arr);
-// PrintArray(arr);
-
-// void PrintArray(int[] array)
-// {
-//   Console.Write($"[{array[0]}");
-//   for (int i = 1; i < 12; i++) Console.Write($", {array[i]}");
-//   Console.Write("]");
-// }
-
-// void Convert(int[] array)
-// {
-//   for (int i = 1; i < 12; i++) array[i]=-array[i];
-// }
+PrintArray(array);
