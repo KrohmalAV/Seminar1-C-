@@ -18,12 +18,14 @@ if(a+b > c && b+c > a && c+a > b && a > 0 && b > 0 && c > 0)
     Console.WriteLine($"Треугольник со сторонами {a}, {b}, {c} существует");
 else 
     Console.WriteLine($"Треугольник со сторонами {a}, {b}, {c} не существует");
+Console.ReadKey();
+
 
 // Ввод длин сторон сразу через пробел
 Console.Clear();
 Console.Write("Введите длины сторон треугольника через пробел: ");
-string a = Console.ReadLine();
-string[] array = a.Split(new char[]{' '}, StringSplitOptions.RemoveEmptyEntries);
+string A = Console.ReadLine()!;
+string[] array = A.Split(new char[]{' '}, StringSplitOptions.RemoveEmptyEntries);
 double[] arr = array.Select(double.Parse).ToArray();
 if(arr[0]+arr[1] > arr[2]
     && arr[1]+arr[2] > arr[0]
