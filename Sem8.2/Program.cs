@@ -26,8 +26,8 @@ void PrintDoubleArray(int[,]array)  // Вывод двумерного масс�
 
 void ChangeRoWColumnArray(int[,]array)  // Замена строк на столбцы
 {
-    for(int i = 0; i < array.GetLength(0)/2; i++)
-        for(int j = 0; j < array.GetLength(1); j++)
+    for(int i = 0; i < array.GetLength(0); i++)
+        for(int j = i; j < array.GetLength(1); j++)
             (array[i,j], array[j,i]) = (array[j,i], array[i,j]);
 }
 
